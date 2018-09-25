@@ -21,9 +21,9 @@
     height: auto;
 }
 
-/*.etapa1, .etapa2, .etapa3, .etapa4, .etapa5, .etapa6, .etapa7, .etapa8 {
+#etapaContent, .peleOpc {
     display: none;
-}*/
+}
 
 .imageOpt {
     border: 3px solid rgba(0,0,0,0.1);
