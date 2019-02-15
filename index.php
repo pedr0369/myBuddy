@@ -4,37 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>V.0.0.3</title>
+    <title>Umini V.0.2.0</title>
 
-    <link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="assets/node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/toastr.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <script src="assets/node_modules/jquery//dist//jquery.min.js"></script>
-    <script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/app.js"></script>    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     
-    <div class="container">
-        <h3 class="text-center">Monte seu Avatar</h3>
-        <div class="col-sm-6 quadroAvatar">
-            <div class="avatar">
-                <img src="assets/img/avatar/masculino/corpo/1.png" class="img img-responsive" style="opacity: 0;">                
+    <div class="row">
+        <h3 class="center-align">Monte seu Avatar</h3>
+        <div class="col s4 quadroAvatar">
+            <!-- Avatar montado -->
+            <div class="avatar"></div>
+        </div>
+
+        <div class="col s8 etapa sexoOpc">
+            <!-- Opções de sexo -->
+            <div class="row">
+                <button class="waves-effect waves-light btn col s5 col m3 col l2 offset-m3 offset-l4" onclick="escolheSexo('masculino')">Masculino</button>
+                <button class="waves-effect waves-light btn col s5 col m3 col l2" onclick="escolheSexo('feminino')">Feminino</button>
+                <button class="waves-effect waves-light btn col s2 col m3 offset-m3 col l2 offset-l1" onclick="resetaUmini()">Resetar</button>
             </div>
+
+            <div class="peleOpc"></div>
+
+            <!-- Abas de opções de montagem do Umini -->
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s2"><a class="active" href="#rosto">Rosto</a></li>
+                    <li class="tab col s2"><a href="#cabelo">Cabelo</a></li>
+                    <li class="tab col s2"><a href="#tronco">Tronco</a></li>
+                    <li class="tab col s2"><a href="#perna">Perna</a></li>
+                    <li class="tab col s2"><a href="#pes">Pés</a></li>                    
+                </ul>
+            </div>
+            <div id="rosto" class="col s12"><div class="tabCorpo"></div></div>
+            <div id="cabelo" class="col s12"><div class="tabCorpo"></div></div>
+            <div id="tronco" class="col s12"><div class="tabCorpo"></div></div>         
+            <div id="perna" class="col s12"><div class="tabCorpo"></div></div>
+            <div id="pes" class="col s12"><div class="tabCorpo"></div></div>            
         </div>
-
-        <div class="col-sm-6 etapa sexoOpc">
-            <p class="text-center">Qual o sexo do seu avatar?</p>
-            <button class="pull-left btn btn-primary col-xs-5" onclick="escolheSexo('masculino')">Masculino</button>
-            <button class="pull-left btn btn-success col-xs-5 col-xs-offset-2" onclick="escolheSexo('feminino')">Feminino</button>
-        </div>
-
-        <div class="col-sm-6 etapa peleOpc"></div>
-
-        <div class="col-sm-6 etapa" id="etapaContent"></div>
     </div>
+
+    <script src="assets/node_modules/jquery//dist//jquery.min.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/toastr.min.js"></script>
+    <script src="assets/js/app.js?1"></script>    
 
 </body>
 </html>

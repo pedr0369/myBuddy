@@ -1,14 +1,15 @@
-.avatar{
-    border: 4px solid rgba(0,0,0,.1);
-    border-radius: 5px;
-    height: 300px;
+.quadroAvatar {
+    margin: 0;
+    padding: 0;
 }
 
-.avatar img {
-    position: absolute;
-    top: 0;
-    left: 0;
+.avatar{
+    height: 350px;    
+}
+
+.avatar img {    
     z-index: 1;
+    height: 350px;
 }
 
 .etapa {
@@ -21,14 +22,78 @@
     height: auto;
 }
 
-#etapaContent, .peleOpc {
-    display: none;
-}
-
 .imageOpt {
     border: 3px solid rgba(0,0,0,0.1);
 }
 
 .imageOpt:hover {
     border: 5px solid rgba(0,0,0,.1);
+}
+
+.sexoOpc button {
+    background: #FDE070;
+    color: #3E6B46;
+    border: 2px solid #3E6B46;
+    margin: 10px 5px 0;
+    border-radius: 8px;
+    font-size: 0.8em;
+}
+
+.tabs {
+    height: 29px;
+}
+
+.tabs .tab {
+    background: #FDE070;    
+    border: 2px solid #3E6B46;
+    border-bottom: none;
+    padding: 0px 8px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 5px;
+    width: calc(20% - 10px) !important;
+}
+
+.tab a {
+    color: #3E6B46 !important;
+    font-size: 0.7em !important;
+}
+
+.tabs .indicator {
+    display: none;
+}
+
+.tabCorpo {
+    border: 2px solid #3E6B46;
+    width: 102%;
+    margin-left: -1%;
+    border-radius: 8px;
+    margin-top: -10px;
+    padding: 10px;
+}
+
+.corPeleCampo {
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 3px;
+    margin-top: -11px !important;
+    margin-bottom: 5px;
+}
+
+.imgOpc {
+    width: 23% !important;
+    margin: 5px 1% !important;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.3);
+    border: 2px solid #fcfcfc; 
+    border-radius: 3px;
+}
+
+.corPeleCampo img:hover, .imgOpc:hover {
+    border: 2px solid black;
+}
+
+#rosto, #cabelo, #perna, #tronco, #pes {
+    padding: 10px;
 }
